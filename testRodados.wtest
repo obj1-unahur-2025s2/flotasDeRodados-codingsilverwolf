@@ -1,0 +1,78 @@
+import rodados.*
+
+describe "Probando un corsa" {
+  const corcita = new Corsa(color = rojo)
+  
+  test "su capacidad" {
+    
+    assert.equals(4,corcita.capacidad() ) 
+  }
+  test "su velocidad" {
+    assert.equals(150, corcita.velocidad())
+  }
+  
+  test "su peso" {
+    assert.equals(1300, corcita.peso())
+  }
+  
+  test "su color" {
+    assert.equals(rojo, corcita.color())
+  }
+
+}
+
+describe "Probando un Kwid"{
+  
+  const quiC = new Kwid(tanqueAdicional = true)
+  const quiS = new Kwid(tanqueAdicional = false)
+  
+  test "su capacidad" {
+    
+    assert.equals(3,quiC.capacidad() )
+    assert.equals(4,quiS.capacidad() )
+  }
+  test "su velocidad" {
+    assert.equals(110, quiC.velocidad())
+    assert.equals(120, quiS.velocidad())
+  }
+  
+  test "su peso" {
+    assert.equals(1350, quiC.peso())
+    assert.equals(1200, quiS.peso())
+  }
+  
+  test "su color" {
+    assert.equals(azul, quiC.color())
+    assert.equals(azul, quiS.color())
+  }
+  
+}
+
+
+
+describe "Probando la trafic"{
+  
+  test "su capacidad con interior cómodo" {
+    
+    assert.equals(5,trafic.capacidad() )
+    
+  test "su capacidad con interior popular" {
+    trafic.cambiarInterior(popular)
+    assert.equals(12,trafic.capacidad())
+  }
+  test "su velocidad" {
+    assert.equals(110, quiC.velocidad())
+    assert.equals(120, quiS.velocidad())
+  }
+  
+  test "su peso" {
+    assert.equals(1350, quiC.peso())
+    assert.equals(1200, quiS.peso())
+  }
+  
+  test "su color" {
+    assert.equals(azul, quiC.color())
+    assert.equals(azul, quiS.color())
+  }
+  
+}
