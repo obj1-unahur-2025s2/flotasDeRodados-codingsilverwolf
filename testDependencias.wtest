@@ -1,0 +1,9 @@
+import dependencias.*
+import rodados.*
+
+describe "Prueba de dependencias"{
+  const deporte = new Depemñndencia(cantidadDeEmpleados =45)
+  const deporte = new Depemñndencia(cantidadDeEmpleados = 31)
+  var cachito = new Corsa(color = rojo)
+  
+}
